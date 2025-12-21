@@ -1,0 +1,9 @@
+cat > ~/projects/minimal-container-runtime/.dockerignore << 'EOF'
+__pycache__/
+*.pyc
+*.log
+.env
+notes/
+tests/
+scripts/
+EOF

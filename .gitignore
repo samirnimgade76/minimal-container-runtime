@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Docker
+*.log
+
+# Environment
+.env
+
+# Project noise
+notes/
+tests/
+
+# OS
+.DS_Store
+Thumbs.db
