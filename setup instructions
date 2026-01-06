@@ -1,0 +1,18 @@
+Setup: Create the Root Filesystem
+Before running the container, you need a minimal Linux filesystem (Alpine Linux is recommended for its small size).
+
+Run the following commands in your terminal:
+
+```bash
+# 1. Create a directory for the container image
+mkdir -p container_root
+
+# 2. Download the Alpine Linux Mini RootFS
+wget [https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-minirootfs-3.18.4-x86_64.tar.gz](https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-minirootfs-3.18.4-x86_64.tar.gz)
+
+# 3. Extract the filesystem
+tar -xzf alpine-minirootfs-3.18.4-x86_64.tar.gz -C container_root
+
+# 4. Running the Container
+chmod +x mdocker.py
+sudo ./mdocker.py run ./container_root /bin/sh
