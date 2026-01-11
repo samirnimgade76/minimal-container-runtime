@@ -18,3 +18,7 @@ sudo tar -xzf alpine-minirootfs-3.18.4-x86_64.tar.gz -C container_root
 # 4. Prepare your script
 chmod +x mdocker.py
 sudo ./mdocker.py run ./container_root /bin/sh
+
+# 5. Also show the hostname
+# run inside the container
+export PS1="u\@\h:\w#"
