@@ -161,8 +161,6 @@ Uses chroot() instead of pivot_root()
 
 No container image format or layering
 
-These limitations are acceptable given the project’s educational focus.
-
 8. Results and Observations
 
 Commands executed inside mdocker are fully isolated from the host’s PID and hostname
