@@ -21,4 +21,4 @@ sudo ./mdocker.py run ./container_root /bin/sh
 
 # 5. Also show the hostname
 # run inside the container
-export PS1="u\@\h:\w#"
+export PS1='\u@\h:\w# '
