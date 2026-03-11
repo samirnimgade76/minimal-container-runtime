@@ -22,3 +22,5 @@ sudo ./mdocker.py run ./container_root /bin/sh
 # 5. Also show the hostname
 # run inside the container
 export PS1='\u@\h:\w# '
+
+# 6. Thats how you can run your container on your pc. 
